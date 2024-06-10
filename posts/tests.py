@@ -9,7 +9,7 @@ class PostListViewTests(APITestCase):
         User.objects.create_user(username='simon', password='pass')
 
     def test_can_list_posts(self):
-        adam = User.objects.get(username='simon')
+        simon = User.objects.get(username='simon')
         Post.objects.create(owner=simon, title='a title')
         response = self.client.get('/posts/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
