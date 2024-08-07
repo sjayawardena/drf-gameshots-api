@@ -57,14 +57,11 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    "8000-sjayawarden-drfgameshot-ulaq1k2hkyz.ws.codeinstitute-ide.net",
-    "https://8000-sjayawarden-drfgameshot-ulaq1k2hkyz.ws.codeinstitute-ide.net",
-    "localhost",
-    "drf-gameshots-api.herokuapp.com",
-    "https://drf-gameshots-api-8431324dd3eb.herokuapp.com/",
+    os.environ.get('ALLOWED_HOST'),
+    'localhost',
 ]
 
 
