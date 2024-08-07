@@ -63,7 +63,8 @@ ALLOWED_HOSTS = [
     "8000-sjayawarden-drfgameshot-ulaq1k2hkyz.ws.codeinstitute-ide.net",
     "https://8000-sjayawarden-drfgameshot-ulaq1k2hkyz.ws.codeinstitute-ide.net",
     "localhost",
-    "<drf-gameshots-api>.herokuapp.com",
+    "drf-gameshots-api.herokuapp.com",
+    "https://drf-gameshots-api-8431324dd3eb.herokuapp.com/",
 ]
 
 
